@@ -4,7 +4,7 @@ from django.db import models
 from datetime import date
 
 class Server(models.Model):
-    name_of_server=models.CharField(max_length=100,null=False)
+    name_of_server=models.CharField(max_length=100,null=False,unique=True)
     ip_address=models.CharField(null=False,max_length=20)
     location=models.CharField(max_length=50)
     description=models.TextField()

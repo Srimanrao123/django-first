@@ -10,5 +10,8 @@ urlpatterns = [
     path("server/<int:serverid>/usage",views.server_usage),
     path("server/<int:serverid>/network",views.server_network_traffic),
     path("server/<int:serverid>/usage_between_dates",views.usage_between_dates),
+    path("add_server",views.add_server),
+    path("update_server",views.update_server),
+
     
 ]
